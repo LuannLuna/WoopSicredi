@@ -9,7 +9,7 @@ import Foundation
 
 public final class Network: NetworkProtocol {
     
-    var endpoint: URL? { URL(string: "http://5f5a8f24d44d640016169133.mockapi.io/api/") }
+    var endpoint: URL? { URL(string: "https://5f5a8f24d44d640016169133.mockapi.io/api/") }
     var session: URLSession?
     
     public static var shared: NetworkProtocolType = Network()
