@@ -1,0 +1,1066 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		098CF73662A7B675CA03425DD0566BCB /* Pods_WoopSicrediTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3C3EC919B43631F6CB2830C365C4D0 /* Pods_WoopSicrediTests.framework */; };
+		0CA83775F1510117B207911CFA73A769 /* ApplicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E86FC173D3CBA5AEA3A7896E08C38B /* ApplicationViewModel.swift */; };
+		200C8255853C6FC02DFB319B7A21B4A8 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF633F9969D74FAB0C6067E6621C3893 /* TabBarItem.swift */; };
+		29DA9625598008A0BC1D3E09569B5C05 /* JSONSerialization+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E88B6066684E3920CFFF69C0B512F9 /* JSONSerialization+Extensions.swift */; };
+		36BC19755881FB33249D5CFD97C52B52 /* URL+Extennsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B6EBEFCE1904166D7DD7C200E2E26B /* URL+Extennsions.swift */; };
+		3AB19543914F1FF5FADCECC80BAEB764 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A161EC3775FA7AC371E840D117E285A /* Coordinator.swift */; };
+		3ACF8FFA7BA903DEE6627F5CBC66DC38 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63783A7FEA1096B8CFDB9D83B7FC796 /* ApplicationViewController.swift */; };
+		4039B303F1F891BCCDF42677241096D2 /* Pods_WoopSicredi_WoopSicrediUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377ED419A7606CD665F52E776512DA6D /* Pods_WoopSicredi_WoopSicrediUITests.framework */; };
+		440CC0B6C626A1391E36663BF970C7F6 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3267E35D9FCB38C63F1CFCD149E79C /* URLRequest+Extensions.swift */; };
+		4C362F8FD787DE0BCC1083499D07DE25 /* WoopSicrediTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17CF74A6467B1F13F3C1B5F1F366261 /* WoopSicrediTests.swift */; };
+		4C49029DFDC0511D86C90E282ADEDC4A /* WoopSicrediUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A11C45A1EDE34D365B30A05370D154 /* WoopSicrediUITests.swift */; };
+		4F3409A7D5383B017009DBD7DA856005 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E4F59098C822E1B63AA3673C949DE /* Network.swift */; };
+		5D2C750706E88FC6E8B3FE99B0F931F9 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E0300157D09BEDCA9ABF4B9ECCDE4 /* Coordinatable.swift */; };
+		7C748D1D55498A97C9F663A1AA35550B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143383EFE30C50B65BA2DA434A0B8CF8 /* ViewController.swift */; };
+		7F7F292CF71E073DEE0212D7EFEE863A /* NetworkMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBACED51A583051AA633BCAAEDB439F /* NetworkMethod.swift */; };
+		81E83F24D076085B5247338668BD6514 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B344694A70C14680B9D4E4862603C9E2 /* MainViewModel.swift */; };
+		82649FE60556FFA90C2B64C201F01C55 /* ApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F898619AEB452767F96D17CCF04935 /* ApplicationView.swift */; };
+		8AD1666F1CD0E34D389636CC73B5C13E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7AF300B9F098C2C200215469B57A818 /* LaunchScreen.storyboard */; };
+		8E7B119D261F2A5400FA7892 /* EventsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B119C261F2A5400FA7892 /* EventsCoordinator.swift */; };
+		95973DDA0B7AEC50910338410304D412 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947EE02E5E094BBB5B0714B5AC9DF71 /* MainViewController.swift */; };
+		9776F194BC24EDA321872EFC4BC06D19 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD57AE03C93BF3A6EFA3706D90D759 /* ApplicationCoordinator.swift */; };
+		A198AC51DA645BFEAA347AFD47EDDA38 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83FED4C6EB3B95FBC8FDC20F353E48 /* NetworkProtocol.swift */; };
+		A2D5C775A09A74AED69F263B3E57D918 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122496A9B109BCE41ABE0C5766CB2A66 /* NetworkError.swift */; };
+		A9E33BA1028288D08848699B7BCE73AE /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E117456B9E9187C65F25CB368C795382 /* MainCoordinator.swift */; };
+		B09BCC0EEBD8B8E67FDAEB5E52CF75AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E8736ECEEF464CC1C4F3A1FC075783 /* AppDelegate.swift */; };
+		C63AAE89E8627D656EE4C708583E1EC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EAC6CFD5A70908C4F201AE0995CC9B /* Main.storyboard */; };
+		CB67522A6E14CD178EFBB176484E6FD6 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786252BFA2EDB7576ECA445F528832C /* Configurable.swift */; };
+		D7CB59CA1E3531211E7B98AA4AC0F9F5 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E05F5C72997BB4140B05FFAC3DBD1 /* ViewCodable.swift */; };
+		E16007D8BBFBBFA6272A55F3EB31EAB2 /* Pods_WoopSicredi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490B29BD9D526D87E375C91F6DEBB19D /* Pods_WoopSicredi.framework */; };
+		E519807FCB83B3B79D3CB2AFB3147719 /* RestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DD58F8167C8576335C6EE64D7D6CC7 /* RestQuery.swift */; };
+		FD347AFEBAA2022FC0CAB60A948830A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B45F501ACAC04F2D7EC3733A82FBE77 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F24383DFD99570CF44AAB686EE3BE06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B9BB9A1E9B106E1B3F2875A078C2011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74A9A45725F8B4A1151D4C5F7144B596;
+			remoteInfo = WoopSicredi;
+		};
+		4D00B2223C09D85D7237F5EC4A7D85F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B9BB9A1E9B106E1B3F2875A078C2011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74A9A45725F8B4A1151D4C5F7144B596;
+			remoteInfo = WoopSicredi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03D98209091594C7A4C2D434CB110B11 /* WoopSicrediTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoopSicrediTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0786252BFA2EDB7576ECA445F528832C /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		122496A9B109BCE41ABE0C5766CB2A66 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		12E86FC173D3CBA5AEA3A7896E08C38B /* ApplicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewModel.swift; sourceTree = "<group>"; };
+		143383EFE30C50B65BA2DA434A0B8CF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16E88B6066684E3920CFFF69C0B512F9 /* JSONSerialization+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONSerialization+Extensions.swift"; sourceTree = "<group>"; };
+		1C3267E35D9FCB38C63F1CFCD149E79C /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		25E8736ECEEF464CC1C4F3A1FC075783 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2ACA51C3F6A19E39A2A495F869526846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34D98FA3DF78520A771ED30BA4484E03 /* WoopSicredi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoopSicredi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D64DF3850EFAF088CA015F643BF982 /* Pods-WoopSicredi-WoopSicrediUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicredi-WoopSicrediUITests.debug.xcconfig"; path = "Target Support Files/Pods-WoopSicredi-WoopSicrediUITests/Pods-WoopSicredi-WoopSicrediUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		377ED419A7606CD665F52E776512DA6D /* Pods_WoopSicredi_WoopSicrediUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoopSicredi_WoopSicrediUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		490B29BD9D526D87E375C91F6DEBB19D /* Pods_WoopSicredi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoopSicredi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D83FED4C6EB3B95FBC8FDC20F353E48 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		5A161EC3775FA7AC371E840D117E285A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5A3C3EC919B43631F6CB2830C365C4D0 /* Pods_WoopSicrediTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoopSicrediTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D859805BE11034F2BD99A36E57ACC13 /* Pods-WoopSicrediTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicrediTests.debug.xcconfig"; path = "Target Support Files/Pods-WoopSicrediTests/Pods-WoopSicrediTests.debug.xcconfig"; sourceTree = "<group>"; };
+		60A11C45A1EDE34D365B30A05370D154 /* WoopSicrediUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoopSicrediUITests.swift; sourceTree = "<group>"; };
+		631E05F5C72997BB4140B05FFAC3DBD1 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
+		66978A595047AB2A4F441933BA39E2B6 /* Pods-WoopSicredi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicredi.debug.xcconfig"; path = "Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi.debug.xcconfig"; sourceTree = "<group>"; };
+		6C2DD39D3B135A5F222CDCB6F8749BBD /* Pods-WoopSicredi-WoopSicrediUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicredi-WoopSicrediUITests.release.xcconfig"; path = "Target Support Files/Pods-WoopSicredi-WoopSicrediUITests/Pods-WoopSicredi-WoopSicrediUITests.release.xcconfig"; sourceTree = "<group>"; };
+		703BA2A82EF47DE670B0CDD1D8E31EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71EAFD3F0873682540E5F6FDD0290BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DBACED51A583051AA633BCAAEDB439F /* NetworkMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMethod.swift; sourceTree = "<group>"; };
+		8B45F501ACAC04F2D7EC3733A82FBE77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E7B119C261F2A5400FA7892 /* EventsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCoordinator.swift; sourceTree = "<group>"; };
+		A10E4F59098C822E1B63AA3673C949DE /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		AD31AC03B69994660AAF9118C5DAC4ED /* WoopSicrediUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoopSicrediUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF558A85D18F65616884FBBBF3D936B3 /* Pods-WoopSicrediTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicrediTests.release.xcconfig"; path = "Target Support Files/Pods-WoopSicrediTests/Pods-WoopSicrediTests.release.xcconfig"; sourceTree = "<group>"; };
+		B0B6EBEFCE1904166D7DD7C200E2E26B /* URL+Extennsions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extennsions.swift"; sourceTree = "<group>"; };
+		B29E0300157D09BEDCA9ABF4B9ECCDE4 /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
+		B344694A70C14680B9D4E4862603C9E2 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		B9DD58F8167C8576335C6EE64D7D6CC7 /* RestQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestQuery.swift; sourceTree = "<group>"; };
+		BBEB4F8D843A461D995339C5B300CAAF /* Pods-WoopSicredi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicredi.release.xcconfig"; path = "Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi.release.xcconfig"; sourceTree = "<group>"; };
+		BF633F9969D74FAB0C6067E6621C3893 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		D63783A7FEA1096B8CFDB9D83B7FC796 /* ApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
+		E117456B9E9187C65F25CB368C795382 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		E1BD57AE03C93BF3A6EFA3706D90D759 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		E73C79149B98E7984B45D8C14A24A9B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E947EE02E5E094BBB5B0714B5AC9DF71 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EE7FE8CAA55D5A705B4362ADF35AF98A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F17CF74A6467B1F13F3C1B5F1F366261 /* WoopSicrediTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoopSicrediTests.swift; sourceTree = "<group>"; };
+		F3F898619AEB452767F96D17CCF04935 /* ApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0945052FF68F03BF8C5672607D3EB1D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E16007D8BBFBBFA6272A55F3EB31EAB2 /* Pods_WoopSicredi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961DBD7B83EF23534A881AA21BB33D50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4039B303F1F891BCCDF42677241096D2 /* Pods_WoopSicredi_WoopSicrediUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E88D5E504852298B9FE172F47785A295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098CF73662A7B675CA03425DD0566BCB /* Pods_WoopSicrediTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		182806C2EFFD9936F28ECF2E6BDDE68E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B344694A70C14680B9D4E4862603C9E2 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		19797538DFE68551C9F42EFE1C769A37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				16E88B6066684E3920CFFF69C0B512F9 /* JSONSerialization+Extensions.swift */,
+				B0B6EBEFCE1904166D7DD7C200E2E26B /* URL+Extennsions.swift */,
+				1C3267E35D9FCB38C63F1CFCD149E79C /* URLRequest+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1B2E9736355B8C3AE5C5CAC7B42C14B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				90E32F486CD5A5640F7BED5DCF954E7B /* Assets */,
+				F6AD54BB71D01A599AB8F43BC25FCE21 /* Properties */,
+				8287FF4CF68CED13982C2077C68BF004 /* Xibs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3B1DA829420999651909703E494D07B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5125D168B78BADCE9906FABD07C49CDC /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				BF633F9969D74FAB0C6067E6621C3893 /* TabBarItem.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		5A14204A89A98ECD5B4BE4F2E0BFB303 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0786252BFA2EDB7576ECA445F528832C /* Configurable.swift */,
+				B29E0300157D09BEDCA9ABF4B9ECCDE4 /* Coordinatable.swift */,
+				5A161EC3775FA7AC371E840D117E285A /* Coordinator.swift */,
+				631E05F5C72997BB4140B05FFAC3DBD1 /* ViewCodable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		62B8DC30CF037D80A841D6040BA05D70 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E117456B9E9187C65F25CB368C795382 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		73D3DEBC5B8C60C2F6E9DA4981CC59BE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D63783A7FEA1096B8CFDB9D83B7FC796 /* ApplicationViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8287FF4CF68CED13982C2077C68BF004 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				E7AF300B9F098C2C200215469B57A818 /* LaunchScreen.storyboard */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		8FB97740BA4FA60452AA7F46812B8F41 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		90E32F486CD5A5640F7BED5DCF954E7B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8B45F501ACAC04F2D7EC3733A82FBE77 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		92C196A3E3FEF5C20F824BE1C5E66EC9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E1BD57AE03C93BF3A6EFA3706D90D759 /* ApplicationCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		941DA18C55C6F9A7E8E3E4BF6D9BE517 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3F898619AEB452767F96D17CCF04935 /* ApplicationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		99AB4EAF89AC7ABF4872017F40C3E490 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				25E8736ECEEF464CC1C4F3A1FC075783 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9AC59298ECCDE786A7A284048E9EEEBD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				62B8DC30CF037D80A841D6040BA05D70 /* Coordinator */,
+				A440CDF95F86E6A78796479893E73525 /* ViewController */,
+				182806C2EFFD9936F28ECF2E6BDDE68E /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9BA7EADC65262208EFA56F6D8563AFB7 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				D21557DC3AD7E05DAF671D922086E0C4 /* Coordinator */,
+				BED0785CAFC44040DC23EDFA6B5CB44A /* ViewController */,
+				3B1DA829420999651909703E494D07B0 /* ViewModel */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		9BB2187C35AC44F8B6B77C75ED7FAE75 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F8EFB6DBB6B4366F8AEBC579BE4D7730 /* Enum */,
+				19797538DFE68551C9F42EFE1C769A37 /* Extensions */,
+				B051E7F908C7C219C3F9D7AA37370834 /* Protocols */,
+				8FB97740BA4FA60452AA7F46812B8F41 /* Service */,
+				A10E4F59098C822E1B63AA3673C949DE /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9D1721AD5E650B0C00C0952DC503F085 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C0FC61E35D6ACA0E28127E30F2F061A5 /* Application */,
+				9BA7EADC65262208EFA56F6D8563AFB7 /* Events */,
+				9AC59298ECCDE786A7A284048E9EEEBD /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9EB4EF3CF60E4964BB1565E25695F99A /* WoopSicrediTests */ = {
+			isa = PBXGroup;
+			children = (
+				E73C79149B98E7984B45D8C14A24A9B2 /* Info.plist */,
+				F17CF74A6467B1F13F3C1B5F1F366261 /* WoopSicrediTests.swift */,
+			);
+			path = WoopSicrediTests;
+			sourceTree = "<group>";
+		};
+		A440CDF95F86E6A78796479893E73525 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E947EE02E5E094BBB5B0714B5AC9DF71 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B036A9E666A61A76CFF6D0F868E10E2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				490B29BD9D526D87E375C91F6DEBB19D /* Pods_WoopSicredi.framework */,
+				5A3C3EC919B43631F6CB2830C365C4D0 /* Pods_WoopSicrediTests.framework */,
+				377ED419A7606CD665F52E776512DA6D /* Pods_WoopSicredi_WoopSicrediUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B051E7F908C7C219C3F9D7AA37370834 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4D83FED4C6EB3B95FBC8FDC20F353E48 /* NetworkProtocol.swift */,
+				B9DD58F8167C8576335C6EE64D7D6CC7 /* RestQuery.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BED0785CAFC44040DC23EDFA6B5CB44A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C0FC61E35D6ACA0E28127E30F2F061A5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				92C196A3E3FEF5C20F824BE1C5E66EC9 /* Coordinator */,
+				941DA18C55C6F9A7E8E3E4BF6D9BE517 /* View */,
+				73D3DEBC5B8C60C2F6E9DA4981CC59BE /* ViewController */,
+				EC3AE002005F8D6AE3631BA85A4C1A05 /* ViewModel */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CCC32B47F9F6E9EA759EBF6C19F6881A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				99AB4EAF89AC7ABF4872017F40C3E490 /* Application */,
+				5125D168B78BADCE9906FABD07C49CDC /* Commons */,
+				9D1721AD5E650B0C00C0952DC503F085 /* Modules */,
+				9BB2187C35AC44F8B6B77C75ED7FAE75 /* Network */,
+				5A14204A89A98ECD5B4BE4F2E0BFB303 /* Protocols */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CDD9CB21211B37849F0704CB0BC526C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36D64DF3850EFAF088CA015F643BF982 /* Pods-WoopSicredi-WoopSicrediUITests.debug.xcconfig */,
+				6C2DD39D3B135A5F222CDCB6F8749BBD /* Pods-WoopSicredi-WoopSicrediUITests.release.xcconfig */,
+				66978A595047AB2A4F441933BA39E2B6 /* Pods-WoopSicredi.debug.xcconfig */,
+				BBEB4F8D843A461D995339C5B300CAAF /* Pods-WoopSicredi.release.xcconfig */,
+				5D859805BE11034F2BD99A36E57ACC13 /* Pods-WoopSicrediTests.debug.xcconfig */,
+				AF558A85D18F65616884FBBBF3D936B3 /* Pods-WoopSicrediTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D21557DC3AD7E05DAF671D922086E0C4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8E7B119C261F2A5400FA7892 /* EventsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		DA7B1DC45919ED663ED8A04295DAF5C5 = {
+			isa = PBXGroup;
+			children = (
+				B036A9E666A61A76CFF6D0F868E10E2F /* Frameworks */,
+				CDD9CB21211B37849F0704CB0BC526C0 /* Pods */,
+				E6AB36B1098FE3E6781F4D8832101F9E /* Products */,
+				E2665FD248BDE2607DD979D015E07221 /* WoopSicredi */,
+				9EB4EF3CF60E4964BB1565E25695F99A /* WoopSicrediTests */,
+				E5BD59F89E774C3C57214DC38BBB9F24 /* WoopSicrediUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		E2665FD248BDE2607DD979D015E07221 /* WoopSicredi */ = {
+			isa = PBXGroup;
+			children = (
+				1B2E9736355B8C3AE5C5CAC7B42C14B4 /* Resources */,
+				CCC32B47F9F6E9EA759EBF6C19F6881A /* Sources */,
+				13EAC6CFD5A70908C4F201AE0995CC9B /* Main.storyboard */,
+				143383EFE30C50B65BA2DA434A0B8CF8 /* ViewController.swift */,
+			);
+			path = WoopSicredi;
+			sourceTree = "<group>";
+		};
+		E5BD59F89E774C3C57214DC38BBB9F24 /* WoopSicrediUITests */ = {
+			isa = PBXGroup;
+			children = (
+				703BA2A82EF47DE670B0CDD1D8E31EE7 /* Info.plist */,
+				60A11C45A1EDE34D365B30A05370D154 /* WoopSicrediUITests.swift */,
+			);
+			path = WoopSicrediUITests;
+			sourceTree = "<group>";
+		};
+		E6AB36B1098FE3E6781F4D8832101F9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34D98FA3DF78520A771ED30BA4484E03 /* WoopSicredi.app */,
+				03D98209091594C7A4C2D434CB110B11 /* WoopSicrediTests.xctest */,
+				AD31AC03B69994660AAF9118C5DAC4ED /* WoopSicrediUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC3AE002005F8D6AE3631BA85A4C1A05 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				12E86FC173D3CBA5AEA3A7896E08C38B /* ApplicationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F6AD54BB71D01A599AB8F43BC25FCE21 /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				71EAFD3F0873682540E5F6FDD0290BCB /* Info.plist */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+		F8EFB6DBB6B4366F8AEBC579BE4D7730 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				122496A9B109BCE41ABE0C5766CB2A66 /* NetworkError.swift */,
+				7DBACED51A583051AA633BCAAEDB439F /* NetworkMethod.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ABCE891CED31F3B488A0D926C927485 /* WoopSicrediUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAF25B89238AB58EF6432638A91F84E3 /* Build configuration list for PBXNativeTarget "WoopSicrediUITests" */;
+			buildPhases = (
+				500E3A9E98DAB53949F1C64ED55C9D19 /* [CP] Check Pods Manifest.lock */,
+				28B4FB1A814C2374CFD8056D51195EC8 /* Sources */,
+				961DBD7B83EF23534A881AA21BB33D50 /* Frameworks */,
+				2A193D284CFC0FBCE9F2631B37D60F24 /* Resources */,
+				D73F4A6F4967F652B239010A487DD25F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D5C4C871EE7D502744B28F9FCE6A93D /* PBXTargetDependency */,
+			);
+			name = WoopSicrediUITests;
+			productName = WoopSicrediUITests;
+			productReference = AD31AC03B69994660AAF9118C5DAC4ED /* WoopSicrediUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		74A9A45725F8B4A1151D4C5F7144B596 /* WoopSicredi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70EC8743E9B66C463A1C76E77323024F /* Build configuration list for PBXNativeTarget "WoopSicredi" */;
+			buildPhases = (
+				8E04E05359F20484F73ADD9FD2621C2E /* [CP] Check Pods Manifest.lock */,
+				D8507D412A2FE4159DFF84335EC33EB4 /* Sources */,
+				0945052FF68F03BF8C5672607D3EB1D9 /* Frameworks */,
+				5C5874296D25052E5773CC9F6C8F3A60 /* Resources */,
+				9E9399ED4EC53871465297E29EAEF1E0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WoopSicredi;
+			productName = WoopSicredi;
+			productReference = 34D98FA3DF78520A771ED30BA4484E03 /* WoopSicredi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92DABEDB9052A5274E6CAF53B20A1D27 /* WoopSicrediTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8870DE7D772B8DB5022B827C7E91CA15 /* Build configuration list for PBXNativeTarget "WoopSicrediTests" */;
+			buildPhases = (
+				D32F29BD29ED444E005B0E32158C90D9 /* [CP] Check Pods Manifest.lock */,
+				149FE69EEABA0E2377B41430DB124A60 /* Sources */,
+				E88D5E504852298B9FE172F47785A295 /* Frameworks */,
+				D20BCA3C8D8D787349072CCB4B773940 /* Resources */,
+				BAE807AA1B61CE4F83AC49A46F8594F2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F60A097167F56ED362B77E3696C18344 /* PBXTargetDependency */,
+			);
+			name = WoopSicrediTests;
+			productName = WoopSicrediTests;
+			productReference = 03D98209091594C7A4C2D434CB110B11 /* WoopSicrediTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B9BB9A1E9B106E1B3F2875A078C2011 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					1ABCE891CED31F3B488A0D926C927485 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 74A9A45725F8B4A1151D4C5F7144B596;
+					};
+					74A9A45725F8B4A1151D4C5F7144B596 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					92DABEDB9052A5274E6CAF53B20A1D27 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 74A9A45725F8B4A1151D4C5F7144B596;
+					};
+				};
+			};
+			buildConfigurationList = 34B91002E1F612FE22A41199DD24E378 /* Build configuration list for PBXProject "WoopSicredi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA7B1DC45919ED663ED8A04295DAF5C5;
+			productRefGroup = E6AB36B1098FE3E6781F4D8832101F9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74A9A45725F8B4A1151D4C5F7144B596 /* WoopSicredi */,
+				92DABEDB9052A5274E6CAF53B20A1D27 /* WoopSicrediTests */,
+				1ABCE891CED31F3B488A0D926C927485 /* WoopSicrediUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A193D284CFC0FBCE9F2631B37D60F24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C5874296D25052E5773CC9F6C8F3A60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD347AFEBAA2022FC0CAB60A948830A1 /* Assets.xcassets in Resources */,
+				8AD1666F1CD0E34D389636CC73B5C13E /* LaunchScreen.storyboard in Resources */,
+				C63AAE89E8627D656EE4C708583E1EC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20BCA3C8D8D787349072CCB4B773940 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		500E3A9E98DAB53949F1C64ED55C9D19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoopSicredi-WoopSicrediUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E04E05359F20484F73ADD9FD2621C2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoopSicredi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E9399ED4EC53871465297E29EAEF1E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAE807AA1B61CE4F83AC49A46F8594F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoopSicrediTests/Pods-WoopSicrediTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoopSicrediTests/Pods-WoopSicrediTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WoopSicrediTests/Pods-WoopSicrediTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D32F29BD29ED444E005B0E32158C90D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoopSicrediTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D73F4A6F4967F652B239010A487DD25F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoopSicredi-WoopSicrediUITests/Pods-WoopSicredi-WoopSicrediUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoopSicredi-WoopSicrediUITests/Pods-WoopSicredi-WoopSicrediUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WoopSicredi-WoopSicrediUITests/Pods-WoopSicredi-WoopSicrediUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		149FE69EEABA0E2377B41430DB124A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C362F8FD787DE0BCC1083499D07DE25 /* WoopSicrediTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28B4FB1A814C2374CFD8056D51195EC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C49029DFDC0511D86C90E282ADEDC4A /* WoopSicrediUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8507D412A2FE4159DFF84335EC33EB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09BCC0EEBD8B8E67FDAEB5E52CF75AB /* AppDelegate.swift in Sources */,
+				9776F194BC24EDA321872EFC4BC06D19 /* ApplicationCoordinator.swift in Sources */,
+				82649FE60556FFA90C2B64C201F01C55 /* ApplicationView.swift in Sources */,
+				3ACF8FFA7BA903DEE6627F5CBC66DC38 /* ApplicationViewController.swift in Sources */,
+				8E7B119D261F2A5400FA7892 /* EventsCoordinator.swift in Sources */,
+				0CA83775F1510117B207911CFA73A769 /* ApplicationViewModel.swift in Sources */,
+				CB67522A6E14CD178EFBB176484E6FD6 /* Configurable.swift in Sources */,
+				5D2C750706E88FC6E8B3FE99B0F931F9 /* Coordinatable.swift in Sources */,
+				3AB19543914F1FF5FADCECC80BAEB764 /* Coordinator.swift in Sources */,
+				29DA9625598008A0BC1D3E09569B5C05 /* JSONSerialization+Extensions.swift in Sources */,
+				A9E33BA1028288D08848699B7BCE73AE /* MainCoordinator.swift in Sources */,
+				95973DDA0B7AEC50910338410304D412 /* MainViewController.swift in Sources */,
+				81E83F24D076085B5247338668BD6514 /* MainViewModel.swift in Sources */,
+				4F3409A7D5383B017009DBD7DA856005 /* Network.swift in Sources */,
+				A2D5C775A09A74AED69F263B3E57D918 /* NetworkError.swift in Sources */,
+				7F7F292CF71E073DEE0212D7EFEE863A /* NetworkMethod.swift in Sources */,
+				A198AC51DA645BFEAA347AFD47EDDA38 /* NetworkProtocol.swift in Sources */,
+				E519807FCB83B3B79D3CB2AFB3147719 /* RestQuery.swift in Sources */,
+				200C8255853C6FC02DFB319B7A21B4A8 /* TabBarItem.swift in Sources */,
+				36BC19755881FB33249D5CFD97C52B52 /* URL+Extennsions.swift in Sources */,
+				440CC0B6C626A1391E36663BF970C7F6 /* URLRequest+Extensions.swift in Sources */,
+				D7CB59CA1E3531211E7B98AA4AC0F9F5 /* ViewCodable.swift in Sources */,
+				7C748D1D55498A97C9F663A1AA35550B /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D5C4C871EE7D502744B28F9FCE6A93D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74A9A45725F8B4A1151D4C5F7144B596 /* WoopSicredi */;
+			targetProxy = 0F24383DFD99570CF44AAB686EE3BE06 /* PBXContainerItemProxy */;
+		};
+		F60A097167F56ED362B77E3696C18344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74A9A45725F8B4A1151D4C5F7144B596 /* WoopSicredi */;
+			targetProxy = 4D00B2223C09D85D7237F5EC4A7D85F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13EAC6CFD5A70908C4F201AE0995CC9B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE7FE8CAA55D5A705B4362ADF35AF98A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E7AF300B9F098C2C200215469B57A818 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ACA51C3F6A19E39A2A495F869526846 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13FEB8A20B1825601960AE30C38FA546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66978A595047AB2A4F441933BA39E2B6 /* Pods-WoopSicredi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X538F75626;
+				INFOPLIST_FILE = WoopSicredi/Resources/Properties/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.lunasoftware.WoopSicredi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		490B47C495AEA3670FF6BAE110A3480A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D859805BE11034F2BD99A36E57ACC13 /* Pods-WoopSicrediTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X538F75626;
+				INFOPLIST_FILE = WoopSicrediTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.lunasoftware.WoopSicrediTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoopSicredi.app/WoopSicredi";
+			};
+			name = Debug;
+		};
+		4E2E4AEC51DA846962C77682EA893767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2DD39D3B135A5F222CDCB6F8749BBD /* Pods-WoopSicredi-WoopSicrediUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X538F75626;
+				INFOPLIST_FILE = WoopSicrediUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.lunasoftware.WoopSicrediUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WoopSicredi;
+			};
+			name = Release;
+		};
+		4F564CAAF9465D62EDE10E3338FF2971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36D64DF3850EFAF088CA015F643BF982 /* Pods-WoopSicredi-WoopSicrediUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X538F75626;
+				INFOPLIST_FILE = WoopSicrediUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.lunasoftware.WoopSicrediUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WoopSicredi;
+			};
+			name = Debug;
+		};
+		906AB3F778D17DD20E0069F3DA7E00DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9292046681C3C0A2ECDAB39D86C377DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBEB4F8D843A461D995339C5B300CAAF /* Pods-WoopSicredi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X538F75626;
+				INFOPLIST_FILE = WoopSicredi/Resources/Properties/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.lunasoftware.WoopSicredi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE11CE3A376BA19BD28033CD58FD0F21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF558A85D18F65616884FBBBF3D936B3 /* Pods-WoopSicrediTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X538F75626;
+				INFOPLIST_FILE = WoopSicrediTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.lunasoftware.WoopSicrediTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoopSicredi.app/WoopSicredi";
+			};
+			name = Release;
+		};
+		D15F0FE1267279C32DCCF2B9B104927B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34B91002E1F612FE22A41199DD24E378 /* Build configuration list for PBXProject "WoopSicredi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D15F0FE1267279C32DCCF2B9B104927B /* Debug */,
+				906AB3F778D17DD20E0069F3DA7E00DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70EC8743E9B66C463A1C76E77323024F /* Build configuration list for PBXNativeTarget "WoopSicredi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13FEB8A20B1825601960AE30C38FA546 /* Debug */,
+				9292046681C3C0A2ECDAB39D86C377DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8870DE7D772B8DB5022B827C7E91CA15 /* Build configuration list for PBXNativeTarget "WoopSicrediTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490B47C495AEA3670FF6BAE110A3480A /* Debug */,
+				BE11CE3A376BA19BD28033CD58FD0F21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAF25B89238AB58EF6432638A91F84E3 /* Build configuration list for PBXNativeTarget "WoopSicrediUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F564CAAF9465D62EDE10E3338FF2971 /* Debug */,
+				4E2E4AEC51DA846962C77682EA893767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B9BB9A1E9B106E1B3F2875A078C2011 /* Project object */;
+}
