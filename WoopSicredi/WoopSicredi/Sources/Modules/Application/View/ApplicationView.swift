@@ -13,7 +13,7 @@ public final class ApplicationView: UIView {
     private lazy var launchImageView = UIImageView().with {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.contentMode = .scaleAspectFit
-        $0.image = #imageLiteral(resourceName: "placeholder")
+        $0.image = #imageLiteral(resourceName: "sicredi")
     }
     
     public init() {
@@ -34,9 +34,8 @@ extension ApplicationView: ViewCodable {
     
     func setupAnchors() {
 
-        launchImageView.snp.makeConstraints { make in
-            make.centerX.centerY.equalToSuperview()
-            make.width.equalToSuperview()
+        launchImageView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
         }
     }
     

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 class EventsViewController: UIViewController {
     
@@ -18,11 +19,20 @@ class EventsViewController: UIViewController {
         $0.rowHeight = UITableView.automaticDimension
         $0.register(EventsTableViewCell.self, forCellReuseIdentifier: "cell")
     }
+    
+    private lazy var animationView = AnimationView().with {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.animation = Animation.named("lurking-cat")
+        $0.backgroundColor = .white
+        $0.loopMode = .loop
+        $0.play()
+    }
+    
+    var refreshControl = UIRefreshControl()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        navigationItem.title = "Eventos"
         
         setupView()
         
@@ -31,14 +41,20 @@ class EventsViewController: UIViewController {
     
     private func completion() {
         DispatchQueue.main.async {
+            self.navigationItem.title = "Eventos"
+            self.animationView.removeFromSuperview()
             self.tableView.reloadData()
         }
     }
     
     private func setupView() {
         view.addSubview(tableView)
+        view.addSubview(animationView)
         
         tableView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+        animationView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
     }
