@@ -7,16 +7,13 @@ target 'WoopSicredi' do
 
   # Pods for WoopSicredi
   pod 'SnapKit'
+  pod 'lottie-ios'
 
   target 'WoopSicrediTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'Nimble', '~> 8.0.0'
-    pod 'Quick', '~> 2.1.0'
-  end
-
-  target 'WoopSicrediUITests' do
-    # Pods for testing
+    pod 'Nimble'
+    pod 'Quick'
   end
 
 end

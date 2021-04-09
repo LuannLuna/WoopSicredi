@@ -127,9 +127,10 @@ class EventDetailViewController: UIViewController {
         let eventTitle = "Venha para o \(viewModel.title)."
         let eventDescription = viewModel.description
         let textToShare = [eventTitle, eventDescription ]
+        
         let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
-        activityViewController.popoverPresentationController?.sourceView = self.view
-        self.present(activityViewController, animated: true, completion: nil)
+        activityViewController.popoverPresentationController?.sourceView = view
+        present(activityViewController, animated: true, completion: nil)
     }
     
     @objc

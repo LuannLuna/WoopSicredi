@@ -1,24 +1,28 @@
 PODS:
+  - lottie-ios (3.2.1)
   - Nimble (8.0.9)
   - Quick (2.1.0)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - Nimble (~> 8.0.0)
-  - Quick (~> 2.1.0)
+  - lottie-ios
+  - Nimble
+  - Quick
   - SnapKit
 
 SPEC REPOS:
   trunk:
+    - lottie-ios
     - Nimble
     - Quick
     - SnapKit
 
 SPEC CHECKSUMS:
+  lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
   Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: ec0830709d2f695cc3de6f6d4940ef93e6904e46
+PODFILE CHECKSUM: 994e3996eb0c6e3fbd00856b472be8e7f67e4edd
 
 COCOAPODS: 1.10.0
