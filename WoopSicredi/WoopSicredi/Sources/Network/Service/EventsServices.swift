@@ -7,10 +7,8 @@
 
 import Foundation
 
-public typealias EventsCallback = (Result<[Event], NetworkError>) -> Void
-
 public protocol EventsServiceProtocol {
-    func fetchEventsData(callback: @escaping EventsCallback)
+    func doRequest<T: Decodable>(callback: @escaping ((Result<T, NetworkError>) -> Void))
 }
 
 public class EventsService: EventsServiceProtocol {
@@ -23,8 +21,8 @@ public class EventsService: EventsServiceProtocol {
         self.query = query
     }
     
-    public func fetchEventsData(callback: @escaping EventsCallback) {
-        network.call(query, [Event].self) { result in
+    public func doRequest<T: Decodable>(callback: @escaping ((Result<T, NetworkError>) -> Void)) {
+        network.call(query, T.self) { result in
             switch result  {
             case .success(let response):
                 callback(.success(response))
