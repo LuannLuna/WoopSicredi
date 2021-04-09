@@ -77,12 +77,15 @@ class EventDetailViewController: UIViewController {
         $0.textAlignment = .justified
     }
     
-    private lazy var separatorView = UIView().with {
-        $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.backgroundColor = .white
-        $0.snp.makeConstraints {
-            $0.height.equalTo(0.5)
+    private var separatorView: UIView {
+        let view = UIView().with{
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.backgroundColor = .gray
+            $0.snp.makeConstraints {
+                $0.height.equalTo(0.5)
+            }
         }
+        return view
     }
     
     private lazy var spacerView = UIView().with {
@@ -191,8 +194,21 @@ extension EventDetailViewController: ViewCodable {
         secondStack.addArrangedSubview(dateTitle)
         secondStack.addArrangedSubview(valueLabel)
         secondStack.addArrangedSubview(separatorView)
+        secondStack.addArrangedSubview(UIView().with {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.snp.makeConstraints {
+                $0.height.equalTo(5)
+            }
+        })
         secondStack.addArrangedSubview(descriptionTitle)
         secondStack.addArrangedSubview(descriptionText)
+        secondStack.addArrangedSubview(separatorView)
+        secondStack.addArrangedSubview(UIView().with {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.snp.makeConstraints {
+                $0.height.equalTo(5)
+            }
+        })
         secondStack.addArrangedSubview(checkinButton)
         
         secondStack.addArrangedSubview(mapView)
@@ -233,7 +249,7 @@ extension EventDetailViewController: ViewCodable {
         secondStack.setCustomSpacing(20, after: descriptionTitle)
         secondStack.setCustomSpacing(20, after: descriptionText)
         secondStack.setCustomSpacing(20, after: valueLabel)
-        secondStack.setCustomSpacing(20, after: separatorView)
+        secondStack.setCustomSpacing(20, after: checkinButton)
         
     }
 }

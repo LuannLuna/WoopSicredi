@@ -46,7 +46,9 @@ class CheckinViewController: UIViewController {
         $0.snp.makeConstraints {
             $0.height.width.equalTo(40)
         }
-        $0.addTarget(self, action: #selector(close), for: .touchUpInside)
+        $0.addTarget(self,
+                     action: #selector(close),
+                     for: .touchUpInside)
     }
     
     private lazy var titleLabel = UILabel().with {
@@ -90,14 +92,22 @@ class CheckinViewController: UIViewController {
         $0.placeholder = "Nome"
         $0.leftViewMode = .always
         
-        let imageView = UIImageView(frame: CGRect(x: 0.0, y: 8.0, width: 24.0, height: 24.0))
+        let imageView = UIImageView(frame: CGRect(x: 0.0,
+                                                  y: 8.0,
+                                                  width: 24.0,
+                                                  height: 24.0))
         imageView.image = #imageLiteral(resourceName: "user")
         imageView.contentMode = .scaleAspectFit
-
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 32, height: 40))
+        
+        let view = UIView(frame: CGRect(x: 0,
+                                        y: 0,
+                                        width: 32,
+                                        height: 40))
         view.addSubview(imageView)
         $0.leftView = view
-        $0.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        $0.addTarget(self,
+                     action: #selector(textFieldDidChange(_:)),
+                     for: .editingChanged)
     }
     
     private lazy var emailTextField = UITextField().with {
@@ -105,21 +115,31 @@ class CheckinViewController: UIViewController {
         $0.placeholder = "Email"
         $0.leftViewMode = .always
         
-        let imageView = UIImageView(frame: CGRect(x: 0.0, y: 8.0, width: 24.0, height: 24.0))
+        let imageView = UIImageView(frame: CGRect(x: 0.0,
+                                                  y: 8.0,
+                                                  width: 24.0,
+                                                  height: 24.0))
         imageView.image = #imageLiteral(resourceName: "email")
         imageView.contentMode = .scaleAspectFit
-
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 32, height: 40))
+        
+        let view = UIView(frame: CGRect(x: 0,
+                                        y: 0,
+                                        width: 32,
+                                        height: 40))
         view.addSubview(imageView)
         $0.leftView = view
-        $0.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        $0.addTarget(self,
+                     action: #selector(textFieldDidChange(_:)),
+                     for: .editingChanged)
     }
     
     private lazy var checkinButton = UIButton().with {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.clipsToBounds = true
         $0.layer.cornerRadius = 8
-        $0.addTarget(self, action: #selector(doCheckin), for: .touchUpInside)
+        $0.addTarget(self,
+                     action: #selector(doCheckin),
+                     for: .touchUpInside)
         $0.snp.makeConstraints {
             $0.height.equalTo(50)
         }
@@ -129,7 +149,7 @@ class CheckinViewController: UIViewController {
     func close() {
         dismiss(animated: true, completion: nil)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -140,7 +160,7 @@ class CheckinViewController: UIViewController {
         super.viewDidAppear(animated)
         viewModel?.viewDidAppear()
     }
-
+    
 }
 
 extension CheckinViewController: ViewCodable {
@@ -204,25 +224,27 @@ extension CheckinViewController: CheckinViewControllerDelegate {
     }
     
     func success() {
-        showAlert(title: "Sucesso", message: "Checkin realizado com sucesso") { action in
+        showAlert(title: "Sucesso",
+                  message: "Checkin realizado com sucesso") { action in
             self.close()
         }
     }
     
     func failure(msg: String) {
-        showAlert(title: "Error", message: "Não foi possível realizar seu login. \(msg)")
+        showAlert(title: "Error",
+                  message: "Não foi possível realizar seu login. \(msg)")
     }
     
     func isValidName() -> Bool {
         if nameTextField.text?.isEmpty ?? false {
             nameTextField.tintColor = .red
             nameTextField.attributedPlaceholder = NSAttributedString(string: "Nome",
-                                                                      attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+                                                                     attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
             nameTextField.becomeFirstResponder()
             return false
         }
         nameTextField.attributedPlaceholder = NSAttributedString(string: "Nome",
-                                                                  attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
+                                                                 attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
         nameTextField.tintColor = .black
         return true
     }
@@ -236,7 +258,7 @@ extension CheckinViewController: CheckinViewControllerDelegate {
                 return true
             }
         }
-
+        
         emailTextField.textColor = .red
         emailTextField.attributedPlaceholder = NSAttributedString(string: "Email",
                                                                   attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
@@ -257,8 +279,12 @@ extension CheckinViewController {
     
     func showAlert(title: String, message: String, handler: ((UIAlertAction)->Void)? = nil) {
         DispatchQueue.main.async {
-            let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: handler))
+            let alert = UIAlertController(title: title,
+                                          message: message,
+                                          preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok",
+                                          style: .default,
+                                          handler: handler))
             self.present(alert, animated: true, completion: nil)
         }
     }

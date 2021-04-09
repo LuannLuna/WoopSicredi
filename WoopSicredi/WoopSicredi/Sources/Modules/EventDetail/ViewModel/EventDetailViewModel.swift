@@ -16,7 +16,7 @@ public protocol EventDetailViewModelType: class {
     func checkinButtonDidTapped()
 }
 
-class EventDetailViewModel: EventDetailViewModelType {
+class EventDetailViewModel {
     
     weak var coordinator: EventDetailCoordinatorType?
     weak var view: EventDetailViewControllerDelegate?
@@ -26,6 +26,10 @@ class EventDetailViewModel: EventDetailViewModelType {
     init(_ event: Event) {
         self.event = event
     }
+    
+}
+
+extension EventDetailViewModel: EventDetailViewModelType {
     
     var title: String { event.title }
     var description: String { event.description }
@@ -40,6 +44,7 @@ class EventDetailViewModel: EventDetailViewModelType {
     }
     
     func checkinButtonDidTapped() {
-        coordinator?.didTappedCheckinButton()
+        coordinator?.checkinButtonDidTapped()
     }
+    
 }

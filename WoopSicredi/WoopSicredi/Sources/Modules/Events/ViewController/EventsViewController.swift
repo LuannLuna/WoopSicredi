@@ -18,6 +18,8 @@ class EventsViewController: UIViewController {
         $0.delegate = self
         $0.rowHeight = UITableView.automaticDimension
         $0.register(EventsTableViewCell.self, forCellReuseIdentifier: "cell")
+        $0.separatorStyle = .none
+        $0.showsVerticalScrollIndicator = false
     }
     
     private lazy var animationView = AnimationView().with {

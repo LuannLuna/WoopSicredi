@@ -9,7 +9,7 @@ import UIKit
 
 public protocol EventDetailCoordinatorType: Coordinator {
     func onFinish()
-    func didTappedCheckinButton()
+    func checkinButtonDidTapped()
 }
 
 class EventDetailCoordinator: EventDetailCoordinatorType {
@@ -45,7 +45,7 @@ class EventDetailCoordinator: EventDetailCoordinatorType {
         coordinatorDelegate?.onCoordinatorFinish(self)
     }
     
-    func didTappedCheckinButton() {
+    func checkinButtonDidTapped() {
         let viewModel = CheckinViewModel(event)
         let viewController = CheckinViewController()
         

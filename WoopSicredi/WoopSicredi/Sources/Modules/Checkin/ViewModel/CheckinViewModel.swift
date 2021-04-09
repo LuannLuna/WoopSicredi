@@ -17,7 +17,6 @@ public protocol CheckinViewModelType: class {
 class CheckinViewModel: CheckinViewModelType {
     var view: CheckinViewControllerDelegate?
     let event: Event
-    var service: EventsServiceProtocol?
     var name: String?
     var email: String?
     
@@ -39,9 +38,9 @@ class CheckinViewModel: CheckinViewModelType {
     
     func doCheckin() {
         guard let name = name, let email = email else { return }
-        service = EventsService(query: EventsQuery.checkin(checkin: Checkin(email: email, name: name, id: event.id)))
+        let service = EventsService(query: EventsQuery.checkin(checkin: Checkin(email: email, name: name, id: event.id)))
         
-        service?.doRequest(callback: { [weak self] (result: Result<CheckinResponse, NetworkError>) in
+        service.doRequest(callback: { [weak self] (result: Result<CheckinResponse, NetworkError>) in
             switch result {
             case .failure(let msg):
                 self?.view?.failure(msg: msg.localizedDescription)

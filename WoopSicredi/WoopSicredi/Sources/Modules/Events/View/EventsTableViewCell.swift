@@ -9,6 +9,12 @@ import UIKit
 
 class EventsTableViewCell: UITableViewCell {
     
+    private lazy var bgview = UIView().with {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.backgroundColor = .white
+        $0.setBackgroundShadow()
+    }
+    
     private lazy var mainStack = UIStackView().with {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.distribution = .fill
@@ -49,6 +55,26 @@ class EventsTableViewCell: UITableViewCell {
         $0.textAlignment = .justified
     }
     
+    private var separatorView: UIView {
+        let view = UIView().with{
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.backgroundColor = .gray
+            $0.snp.makeConstraints {
+                $0.height.equalTo(0.5)
+            }
+        }
+        return view
+    }
+    
+    private lazy var lineStack = UIStackView().with {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.spacing = 5.0
+        $0.alignment = .fill
+        $0.distribution = .fill
+        $0.axis = .horizontal
+        $0.addArrangedSubview(UIView())
+    }
+    
     private lazy var valueText = UILabel().with {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.textColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
@@ -61,6 +87,7 @@ class EventsTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        selectionStyle = .none
         setup()
     }
     
@@ -85,16 +112,27 @@ class EventsTableViewCell: UITableViewCell {
 
 extension EventsTableViewCell: ViewCodable {
     func setupViews() {
-        addSubview(thumbView)
-        addSubview(mainStack)
+        addSubview(bgview)
+        
+        bgview.addSubview(thumbView)
+        bgview.addSubview(mainStack)
         
         mainStack.addArrangedSubview(dateTitle)
         mainStack.addArrangedSubview(title)
         mainStack.addArrangedSubview(descriptionText)
-        mainStack.addArrangedSubview(valueText)
+        mainStack.addArrangedSubview(separatorView)
+        mainStack.addArrangedSubview(lineStack)
+        lineStack.addArrangedSubview(valueText)
+        
     }
     
     func setupAnchors() {
+        
+        bgview.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview().inset(10)
+            $0.leading.trailing.equalToSuperview().inset(10)
+        }
+        
         thumbView.snp.makeConstraints {
             $0.width.height.equalTo(90)
             $0.leading.top.equalToSuperview().inset(10)
@@ -106,5 +144,6 @@ extension EventsTableViewCell: ViewCodable {
             $0.trailing.equalToSuperview().inset(10)
             $0.height.greaterThanOrEqualTo(thumbView).offset(5)
         }
+
     }
 }
