@@ -41,11 +41,11 @@ class CheckinViewModel: CheckinViewModelType {
         guard let name = name, let email = email else { return }
         service = EventsService(query: EventsQuery.checkin(checkin: Checkin(email: email, name: name, id: event.id)))
         
-        service?.doRequest(callback: { [weak self] (result: Result<String, NetworkError>) in
+        service?.doRequest(callback: { [weak self] (result: Result<CheckinResponse, NetworkError>) in
             switch result {
             case .failure(let msg):
                 self?.view?.failure(msg: msg.localizedDescription)
-            case .success(_):
+            case .success:
                 self?.view?.success()
             }
         })

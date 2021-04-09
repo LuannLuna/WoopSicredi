@@ -19,3 +19,7 @@ public struct Checkin: Codable {
     }
     
 }
+
+public struct CheckinResponse: Codable {
+    let code: String
+}
