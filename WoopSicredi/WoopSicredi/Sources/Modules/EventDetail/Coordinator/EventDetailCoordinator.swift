@@ -46,7 +46,13 @@ class EventDetailCoordinator: EventDetailCoordinatorType {
     }
     
     func didTappedCheckinButton() {
-        navigationController.present(ViewController(), animated: true, completion: nil)
+        let viewModel = CheckinViewModel(event)
+        let viewController = CheckinViewController()
+        
+        viewController.viewModel = viewModel
+        viewModel.view = viewController
+        
+        navigationController.present(viewController, animated: true, completion: nil)
     }
 }
 

@@ -31,7 +31,7 @@ class EventsViewModel: EventsViewModelType {
     }
     
     func fetchData(completion: CompletionHandler?) {
-        service.fetchEventsData { [weak self] result in
+        service.doRequest { [weak self] (result: Result<[Event], NetworkError>) in
             switch result {
             case .success(let events):
                 self?.events = events
