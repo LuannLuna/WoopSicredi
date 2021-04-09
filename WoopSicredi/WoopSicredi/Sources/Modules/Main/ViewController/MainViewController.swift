@@ -33,17 +33,6 @@ class MainViewController: UITabBarController, MainViewControllerDelegate {
 
 extension MainViewController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        if let selectedViewController = viewControllers?[selectedIndex] {
-            if selectedViewController === viewController {
-                if let navigationController = viewController as? UINavigationController {
-                    if navigationController.viewControllers.count == 1 {
-//                        if let scrollable = navigationController.viewControllers.first as? Scrollable {
-//                            scrollable.scrollToTop()
-//                        }
-                    }
-                }
-            }
-        }
         return true
     }
 }

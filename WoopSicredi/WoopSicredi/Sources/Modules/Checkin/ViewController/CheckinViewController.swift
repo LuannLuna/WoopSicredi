@@ -11,6 +11,8 @@ protocol CheckinViewControllerDelegate {
     func configure(_ event: Event)
     func success()
     func failure(msg: String)
+    func isValidName() -> Bool
+    func isValidEmail() -> Bool
 }
 
 class CheckinViewController: UIViewController {
@@ -185,7 +187,9 @@ extension CheckinViewController: CheckinViewControllerDelegate {
     
     @objc
     func doCheckin() {
-        viewModel?.doCheckin()
+        if isValidName(), isValidEmail() {
+            viewModel?.doCheckin()
+        }
     }
     
     func configure(_ event: Event) {
@@ -209,12 +213,35 @@ extension CheckinViewController: CheckinViewControllerDelegate {
         showAlert(title: "Error", message: "Não foi possível realizar seu login. \(msg)")
     }
     
-    func showAlert(title: String, message: String, handler: ((UIAlertAction)->Void)? = nil) {
-        DispatchQueue.main.async {
-            let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: handler))
-            self.present(alert, animated: true, completion: nil)
+    func isValidName() -> Bool {
+        if nameTextField.text?.isEmpty ?? false {
+            nameTextField.tintColor = .red
+            nameTextField.attributedPlaceholder = NSAttributedString(string: "Nome",
+                                                                      attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+            nameTextField.becomeFirstResponder()
+            return false
         }
+        nameTextField.attributedPlaceholder = NSAttributedString(string: "Nome",
+                                                                  attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
+        nameTextField.tintColor = .black
+        return true
+    }
+    
+    func isValidEmail() -> Bool {
+        if let text = emailTextField.text {
+            if text.isValidEmail {
+                emailTextField.attributedPlaceholder = NSAttributedString(string: "Email",
+                                                                          attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
+                emailTextField.textColor = .black
+                return true
+            }
+        }
+
+        emailTextField.textColor = .red
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "Email",
+                                                                  attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+        emailTextField.becomeFirstResponder()
+        return false
     }
 }
 
@@ -225,6 +252,14 @@ extension CheckinViewController {
             viewModel?.setName(textField.text)
         } else {
             viewModel?.setEmail(textField.text)
+        }
+    }
+    
+    func showAlert(title: String, message: String, handler: ((UIAlertAction)->Void)? = nil) {
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: handler))
+            self.present(alert, animated: true, completion: nil)
         }
     }
 }

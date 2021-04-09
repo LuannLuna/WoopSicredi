@@ -35,6 +35,7 @@
 		8AD1666F1CD0E34D389636CC73B5C13E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7AF300B9F098C2C200215469B57A818 /* LaunchScreen.storyboard */; };
 		8B7F6DD220A74AA1FDCB0683FAEB368C /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A26F2D90C745494E5779B60A40390F /* Collection+Extensions.swift */; };
 		8C44BE2E98459D918C327C1DB3FCACB2 /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E0DB3AE05F9F462A27A403F5522A73 /* EventDetailViewModel.swift */; };
+		8E9629892620D64B00F72AB8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9629882620D64B00F72AB8 /* String+Extensions.swift */; };
 		8EE5CC242620B86F00A8D8BE /* LocalFileJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5CC232620B86F00A8D8BE /* LocalFileJSON.swift */; };
 		8EE5CC2A2620B88400A8D8BE /* ResultCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5CC292620B88400A8D8BE /* ResultCase.swift */; };
 		8EE5CC302620B8AC00A8D8BE /* Events.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EE5CC2F2620B8AC00A8D8BE /* Events.json */; };
@@ -106,6 +107,7 @@
 		80AE0D571C164E36945404C89153EBCA /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		839EB1E8A0BD1374FC1A827D9AC94C19 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		8B45F501ACAC04F2D7EC3733A82FBE77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E9629882620D64B00F72AB8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		8EE5CC232620B86F00A8D8BE /* LocalFileJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileJSON.swift; sourceTree = "<group>"; };
 		8EE5CC292620B88400A8D8BE /* ResultCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCase.swift; sourceTree = "<group>"; };
 		8EE5CC2F2620B8AC00A8D8BE /* Events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Events.json; sourceTree = "<group>"; };
@@ -547,6 +549,7 @@
 				839EB1E8A0BD1374FC1A827D9AC94C19 /* UIImageView+Extensions.swift */,
 				F4CA2BFB6D6DBF4E30BD3C991CCA8CCF /* UILabel.swift */,
 				80AE0D571C164E36945404C89153EBCA /* UITextField+Extensions.swift */,
+				8E9629882620D64B00F72AB8 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -864,6 +867,7 @@
 				3BBBFC101516477C461BBF7ADE38F764 /* Event.swift in Sources */,
 				6B2D4FDF5EF17AB0FDB96C4F9FB58F7B /* EventDetailCoordinator.swift in Sources */,
 				1EA96401D1362478768AAF038A959C84 /* EventDetailViewController.swift in Sources */,
+				8E9629892620D64B00F72AB8 /* String+Extensions.swift in Sources */,
 				8C44BE2E98459D918C327C1DB3FCACB2 /* EventDetailViewModel.swift in Sources */,
 				0BC4E038DC6DB31B98850F843092471D /* EventsCoordinator.swift in Sources */,
 				B90BFD5AD891BB2751D445031397862D /* EventsQuery.swift in Sources */,
