@@ -110,6 +110,17 @@ class EventDetailViewController: UIViewController {
         }
     }
     
+    private lazy var loadingView = UIView().with {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.backgroundColor = .white
+    }
+    
+    let activityIndicator = UIActivityIndicatorView(style: .large).with {
+        $0.color = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.startAnimating()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -128,7 +139,8 @@ class EventDetailViewController: UIViewController {
         let eventDescription = viewModel.description
         let textToShare = [eventTitle, eventDescription ]
         
-        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+        let activityViewController = UIActivityViewController(activityItems: textToShare,
+                                                              applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = view
         present(activityViewController, animated: true, completion: nil)
     }
@@ -167,6 +179,8 @@ class EventDetailViewController: UIViewController {
 extension EventDetailViewController: ViewCodable {
     func setupViews() {
         view.addSubview(scrollView)
+        view.addSubview(loadingView)
+        loadingView.addSubview(activityIndicator)
         
         scrollView.addSubview(stackView)
         
@@ -187,6 +201,14 @@ extension EventDetailViewController: ViewCodable {
     }
     
     func setupAnchors() {
+        
+        loadingView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+        
+        activityIndicator.snp.makeConstraints {
+            $0.center.equalToSuperview()
+        }
         
         scrollView.snp.makeConstraints {
             $0.edges.equalToSuperview()
@@ -228,5 +250,7 @@ extension EventDetailViewController: EventDetailViewControllerDelegate {
         checkinButton.setTitle("check-in".uppercased(), for: .normal)
         checkinButton.backgroundColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
         setupMap()
+        loadingView.removeFromSuperview()
+        activityIndicator.stopAnimating()
     }
 }
